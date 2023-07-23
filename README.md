@@ -189,8 +189,11 @@ Start Memory Profiling with Process name using:
 ********Using Params Duration in sec: 100 | Process Name: chrome.exe | WITH Leak Memory Threshold : 10% | WITH CPU Threshold : 5%*******
 Memory Sampling for Process id : 17432 : chrome.exe
  Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
+ 
  The average memory % usage of the process name chrome.exe is 1.84 % | Average Memory Used : 295.54328125 MB | Average CPU Usage : 0.0% | Start Time :Sun Jul 23 08:50:20 2023 | End Time: Sun Jul 23 08:51:29 2023
+
 ******Parameterized Memory Leak Check in Percentage 10 | Memory Threshold Should Not Exceed :298.92MB, Memory Leak Indicator Value Increase Param: 3.38MB, Avg Priv Mem Usage: 295.54******
+
 C:\Git\nexthink\nexthink.py:83: UserWarning:
 Application Leaks at Point Time: Sun Jul 23 08:50:35 2023 | Actual Memory Usage: 299.52 | Average Memory of Execution is : 295.54
   warnings.warn(outxt)
