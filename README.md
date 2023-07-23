@@ -2,9 +2,9 @@
 ## 🚀 About Me
 An Automation Engineer [SDET] , Providing Test Solutions Since 2014...
 
-- [Jugal Kishore](https://nitinjugal17.github.io/)
+- [Website@jugalk](https://nitinjugal17.github.io/)
 
-- [@jugalk](https://www.linkedin.com/in/jugalk/)
+- [Linked@jugalk](https://www.linkedin.com/in/jugalk/)
 
 # Process Resources Monitoring App [PRM App]
 
