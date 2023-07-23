@@ -268,8 +268,9 @@ Answer : Yes, You can.
 #### What if i enter a wrong Process Name?
 
 Answer: You will be suggested without nearest possible running process value, to re-try.
-        
-        ``` Example
+
+```http
+Example
         python .\nexthink.py -p chrome -d 100    
 ********Using Params Duration in sec: 100 | Process Name: chrome | WITH Leak Memory Threshold : 10% | WITH CPU Threshold : 5%*******
 
@@ -277,7 +278,7 @@ Answer: You will be suggested without nearest possible running process value, to
             ********#############  PLEASE RETRY WITH CORRECT PARAMETERS | Ex. | python nexthink.py -d 10 -n chrome ###########***********
 Memory Sampling for Process id : 0 : chrome
 Please Enter Correct Process Name or Check Permission of Script Unable to find Process: chrome , PID : 0 | PLEASE RETRY WITH CORRECT PROCESS NAME
-        ```
+```
 
 
 
