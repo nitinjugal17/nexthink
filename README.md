@@ -288,12 +288,20 @@ Default [-ct] is *5%*
 
 ## License
 
-[Pywin32](https://github.com/mhammond/pywin32/blob/main/Pythonwin/License.txt) - Lic. [PSF 2.0](https://spdx.org/licenses/PSF-2.0.html)
+[Pywin32](https://github.com/mhammond/pywin32/blob/main/Pythonwin/License.txt) - License Open-Source: [PSF 2.0](https://spdx.org/licenses/PSF-2.0.html)
 
-[WMI](https://github.com/tjguk/wmi) - Lic. [MIT](http://www.opensource.org/licenses/mit-license.php)
+[WMI](https://github.com/tjguk/wmi) - License Open-Source: [MIT](http://www.opensource.org/licenses/mit-license.php)
 
-[Psutil](https://github.com/giampaolo/psutil/blob/master/LICENSE) - Lic. [BSD3](https://docs.eggplantsoftware.com/performance/license-psutil-bsd/)
+[Psutil](https://github.com/giampaolo/psutil/blob/master/LICENSE) - License Open-Source: [BSD3](https://docs.eggplantsoftware.com/performance/license-psutil-bsd/)
 
+
+## Roadmap
+
+- Additional support to iterate time data i.e not using range(duration) with loop.
+
+- Add integrations for Profiling with Tracemalloc
+
+- Convert to classmethods
 
 
 ## Feedback
