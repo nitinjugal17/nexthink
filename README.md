@@ -184,3 +184,72 @@ Start Memory Profiling with Process name using:
 
 ![App Screenshot](https://github.com/nitinjugal17/nexthink/blob/main/screenshots/Screenshot_without_param.png)
 
+```http
+PS C:\Git\nexthink> python .\nexthink.py -p chrome.exe -d 100 
+********Using Params Duration in sec: 100 | Process Name: chrome.exe | WITH Leak Memory Threshold : 10% | WITH CPU Threshold : 5%*******
+Memory Sampling for Process id : 17432 : chrome.exe
+ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████ Capture with Duration 100s in Progress used Process Name: chrome.exe | █████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████The average memory % usage of the process name chrome.exe is 1.84 % | Average Memory Used : 295.54328125 MB | Average CPU Usage : 0.0% | Start Time :Sun Jul 23 08:50:20 2023 | End Time: Sun Jul 23 08:51:29 2023
+******Parameterized Memory Leak Check in Percentage 10 | Memory Threshold Should Not Exceed :298.92MB, Memory Leak Indicator Value Increase Param: 3.38MB, Avg Priv Mem Usage: 295.54******
+C:\Git\nexthink\nexthink.py:83: UserWarning:
+Application Leaks at Point Time: Sun Jul 23 08:50:35 2023 | Actual Memory Usage: 299.52 | Average Memory of Execution is : 295.54
+  warnings.warn(outxt)
+C:\Git\nexthink\nexthink.py:83: UserWarning:
+Application Leaks at Point Time: Sun Jul 23 08:50:35 2023 | Actual Memory Usage: 299.35 | Average Memory of Execution is : 295.54
+  warnings.warn(outxt)
+C:\Git\nexthink\nexthink.py:83: UserWarning:
+Application Leaks at Point Time: Sun Jul 23 08:50:36 2023 | Actual Memory Usage: 299.41 | Average Memory of Execution is : 295.54
+  warnings.warn(outxt)
+C:\Git\nexthink\nexthink.py:83: UserWarning:
+Application Leaks at Point Time: Sun Jul 23 08:50:42 2023 | Actual Memory Usage: 299.92 | Average Memory of Execution is : 295.54
+  warnings.warn(outxt)
+C:\Git\nexthink\nexthink.py:83: UserWarning:
+Application Leaks at Point Time: Sun Jul 23 08:50:43 2023 | Actual Memory Usage: 301.56 | Average Memory of Execution is : 295.54
+  warnings.warn(outxt)
+C:\Git\nexthink\nexthink.py:83: UserWarning:
+Application Leaks at Point Time: Sun Jul 23 08:50:44 2023 | Actual Memory Usage: 301.57 | Average Memory of Execution is : 295.54
+  warnings.warn(outxt)
+C:\Git\nexthink\nexthink.py:83: UserWarning:
+Application Leaks at Point Time: Sun Jul 23 08:50:44 2023 | Actual Memory Usage: 301.09 | Average Memory of Execution is : 295.54
+  warnings.warn(outxt)
+C:\Git\nexthink\nexthink.py:83: UserWarning:
+Application Leaks at Point Time: Sun Jul 23 08:50:45 2023 | Actual Memory Usage: 300.85 | Average Memory of Execution is : 295.54
+  warnings.warn(outxt)
+C:\Git\nexthink\nexthink.py:83: UserWarning: 
+Application Leaks at Point Time: Sun Jul 23 08:50:45 2023 | Actual Memory Usage: 300.43 | Average Memory of Execution is : 295.54
+  warnings.warn(outxt)
+C:\Git\nexthink\nexthink.py:83: UserWarning:
+Application Leaks at Point Time: Sun Jul 23 08:50:46 2023 | Actual Memory Usage: 300.24 | Average Memory of Execution is : 295.54
+  warnings.warn(outxt)
+C:\Git\nexthink\nexthink.py:83: UserWarning:
+Application Leaks at Point Time: Sun Jul 23 08:50:47 2023 | Actual Memory Usage: 300.23 | Average Memory of Execution is : 295.54
+  warnings.warn(outxt)
+C:\Git\nexthink\nexthink.py:83: UserWarning:
+Application Leaks at Point Time: Sun Jul 23 08:50:48 2023 | Actual Memory Usage: 300.23 | Average Memory of Execution is : 295.54
+  warnings.warn(outxt)
+C:\Git\nexthink\nexthink.py:83: UserWarning:
+Application Leaks at Point Time: Sun Jul 23 08:50:49 2023 | Actual Memory Usage: 302.05 | Average Memory of Execution is : 295.54
+  warnings.warn(outxt)
+C:\Git\nexthink\nexthink.py:83: UserWarning:
+Application Leaks at Point Time: Sun Jul 23 08:50:50 2023 | Actual Memory Usage: 300.18 | Average Memory of Execution is : 295.54
+  warnings.warn(outxt)
+C:\Git\nexthink\nexthink.py:83: UserWarning:
+Application Leaks at Point Time: Sun Jul 23 08:50:51 2023 | Actual Memory Usage: 300.18 | Average Memory of Execution is : 295.54
+  warnings.warn(outxt)
+C:\Git\nexthink\nexthink.py:83: UserWarning:
+Application Leaks at Point Time: Sun Jul 23 08:50:51 2023 | Actual Memory Usage: 302.16 | Average Memory of Execution is : 295.54
+  warnings.warn(outxt)
+C:\Git\nexthink\nexthink.py:83: UserWarning:
+Application Leaks at Point Time: Sun Jul 23 08:50:52 2023 | Actual Memory Usage: 304.02 | Average Memory of Execution is : 295.54
+  warnings.warn(outxt)
+C:\Git\nexthink\nexthink.py:83: UserWarning:
+Application Leaks at Point Time: Sun Jul 23 08:50:53 2023 | Actual Memory Usage: 304.45 | Average Memory of Execution is : 295.54
+  warnings.warn(outxt)
+C:\Git\nexthink\nexthink.py:83: UserWarning:
+Application Leaks at Point Time: Sun Jul 23 08:50:53 2023 | Actual Memory Usage: 301.27 | Average Memory of Execution is : 295.54
+  warnings.warn(outxt)
+C:\Git\nexthink\nexthink.py:83: UserWarning:
+Application Leaks at Point Time: Sun Jul 23 08:51:29 2023 | Actual Memory Usage: 299.07 | Average Memory of Execution is : 295.54
+  warnings.warn(outxt)
+******Parameterized Cpu Leak Check in Percentage 5 | CPU Usage Threshold Should Not Exceed :5.0%, CPU Spike Indicator Value Increasing Param :5.0%, Avg Cpu Usage:0.0******
+PS C:\Git\nexthink>
+```

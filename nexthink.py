@@ -25,7 +25,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# Purpose : This script aims to gather all memory profiling for a windows process and log them in a csv file within execution directory, with appropriate memory leak indicators
+# Purpose : This script aims to gather all memory profiling information for a specific windows process and log them in a csv file within execution directory, with appropriate memory leak indicators
 # Usage : nexthink.py -p chrome.exe -d 100 -ct 5 -mt 10
 
 import sys , csv, getopt, time
@@ -73,7 +73,8 @@ def __detect_leak(filename, mem_dict, cpu_dict, memaverage, cpuavg, cpupercent: 
   val_increase = (mempercent/round(memaverage,2)) * 100
   leakmem_indi = round(memaverage , 2) + round(val_increase, 2)
   # print(val_increase, leakmem_indi)
-  print(f'\nParameterized Memory Leak Check in Percentage {mempercent} | Memory Threshold Should Not Exceed :{leakmem_indi}Mb, Increase By: {round(val_increase, 2)}Mb')
+  txtout = f'Parameterized Memory Leak Check in Percentage {mempercent} | Memory Threshold Should Not Exceed :{round(leakmem_indi, 2)}MB, Memory Leak Indicator Value Increase Param: {round(val_increase, 2)}MB, Avg Priv Mem Usage: {round(leakmem_indi - val_increase, 2)}'
+  print('******' + txtout + '******')
   for t, mem in mem_dict.items():
     # print(t,mem)
     if leakmem_indi < round(mem, 2):
@@ -94,7 +95,8 @@ def __detect_leak(filename, mem_dict, cpu_dict, memaverage, cpuavg, cpupercent: 
   cpu_val = round(cpuavg, 2 ) + cpupercent
   leakcpu_indi = round(cpuavg + cpu_val, 2)
   # print(cpu_val, leakcpu_indi)
-  print(f'\nParameterized Cpu Leak Check in Percentage {cpupercent} | CPU Usage Threshold Should Not Exceed :{leakcpu_indi}%, Increased By :{cpu_val}%')
+  strot = f'Parameterized Cpu Leak Check in Percentage {cpupercent} | CPU Usage Threshold Should Not Exceed :{leakcpu_indi}%, CPU Spike Indicator Value Increasing Param :{cpu_val}%, Avg Cpu Usage:{cpuavg}'
+  print('******' + strot + '******')
   for ti, per in cpu_dict.items():
     # print(ti,per)
     if leakcpu_indi < round(per, 3):
@@ -140,13 +142,13 @@ def dump_process_data_to_csv(process_name, filename, duration, cputhres, memthre
           # writer.writerow(["PID", "Name", "CPU %", "Mem Usage %", "Priv Mem Usage", "File Handles"])
           process = psutil.Process(pid)
           writer.writerow([process.pid, process_name, process.cpu_percent(), process.memory_percent(), process.memory_info().rss / (1024 ** 2), process.num_handles()])
-      print('\r Capture with Duration {}s in Progress used Process Name: {} | {}  \n'.format(duration, process_name, time_bar), end='\r')
+      print('\r Capture with Duration {}s in Progress used Process Name: {} | {}  '.format(duration, process_name, time_bar), end='\r')
       time.sleep(.6)
     end_time = time.time()
     avg_mem_usage = mem_usage / duration
     avg_mem_mb = mem_mb / duration
     cpu_avg = cpu_usage / duration
-    str_out = "The average memory % usage of the process name {} is {} % | Average Memory Used : {} MB | Average CPU Usage : {}% | Start Time :{} | End Time: {}".format(process_name, round(avg_mem_usage,3), avg_mem_mb,round(cpu_avg, 3), time.ctime(start_time), time.ctime(end_time)) 
+    str_out = "The average memory % usage of the process name {} is {} % | Average Memory Used : {} MB | Average CPU Usage : {}% | Start Time :{} | End Time: {}".format(process_name, round(avg_mem_usage,2), avg_mem_mb,round(cpu_avg, 3), time.ctime(start_time), time.ctime(end_time)) 
     print(str_out)
     with open(filename, "a", newline="") as csvfile:
       writer = csv.writer(csvfile, delimiter=",")
@@ -182,7 +184,7 @@ if __name__ == "__main__":
 
   # Self Memory Profiling and outputing as csv data
   tracemalloc.start(10)
-  print("Using Params Duration in sec: {} | Process Name: {} | Leak Memory Threshold with : {}% | CPU Threshold Increase: {}%".format(duration, process_name, memthres, cputhres))
+  print("********Using Params Duration in sec: {} | Process Name: {} | WITH Leak Memory Threshold : {}% | WITH CPU Threshold : {}%*******".format(duration, process_name, memthres, cputhres))
   dump_process_data_to_csv(process_name, filename, int(duration), int(cputhres), int(memthres))
   gc.collect()
   profiler.snapshot()
