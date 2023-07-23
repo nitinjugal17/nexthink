@@ -1,15 +1,188 @@
 ""
-"Please Enter Correct Process Name or Check Permission of Script Unable to find Process: chrome , PID : 0 | PLEASE RETRY WITH CORRECT PROCESS NAME"
+PID,Name,CPU Use,Mem Usage,Priv Mem Usage,File Handles
+17432,chrome.exe,0.0,1.8189637786627726,292.421875,2195
+17432,chrome.exe,0.0,1.8201543908075022,292.61328125,2193
+17432,chrome.exe,0.0,1.8193039535612667,292.4765625,2235
+17432,chrome.exe,0.0,1.8195712338386552,292.51953125,2235
+17432,chrome.exe,0.0,1.8080052872898509,290.66015625,2266
+17432,chrome.exe,0.0,1.8136424713220411,291.56640625,2271
+17432,chrome.exe,0.0,1.8113827380677578,291.203125,2269
+17432,chrome.exe,0.0,1.8287073596839292,293.98828125,2285
+17432,chrome.exe,0.0,1.8491664500076541,297.27734375,2296
+17432,chrome.exe,0.0,1.8440638265302405,296.45703125,2288
+17432,chrome.exe,0.0,1.8688722959132844,300.4453125,2290
+17432,chrome.exe,0.0,1.8510131137423371,297.57421875,2295
+17432,chrome.exe,0.0,1.8541475824498912,298.078125,2289
+17432,chrome.exe,0.0,1.8566502977745272,298.48046875,2296
+17432,chrome.exe,0.0,1.8696741367454497,300.57421875,2312
+17432,chrome.exe,0.0,1.8719824664138032,300.9453125,2322
+17432,chrome.exe,0.0,1.8558484569423623,298.3515625,2308
+17432,chrome.exe,0.0,1.8823335026108425,302.609375,2369
+17432,chrome.exe,0.0,1.884641832279196,302.98046875,2369
+17432,chrome.exe,0.0,1.8815316617786775,302.48046875,2396
+17432,chrome.exe,0.0,1.8656649325846246,299.9296875,2371
+17432,chrome.exe,0.0,1.856941876258951,298.52734375,2369
+17432,chrome.exe,0.0,1.8622631835996821,299.3828125,2373
+17432,chrome.exe,0.0,1.8580352955755397,298.703125,2377
+17432,chrome.exe,0.0,1.8600277485524346,299.0234375,2336
+17432,chrome.exe,0.0,1.8386453263613676,295.5859375,2291
+17432,chrome.exe,0.0,1.8358753307593432,295.140625,2289
+17432,chrome.exe,0.0,1.8311371803874592,294.37890625,2246
+17432,chrome.exe,0.0,1.8327894584658597,294.64453125,2246
+17432,chrome.exe,0.0,1.8304325323834354,294.265625,2336
+17432,chrome.exe,0.0,1.8331539315713894,294.703125,2346
+17432,chrome.exe,0.0,1.83563234868899,295.1015625,2345
+17432,chrome.exe,0.0,1.828221395543223,293.91015625,2343
+17432,chrome.exe,0.0,1.8333240190206366,294.73046875,2344
+17432,chrome.exe,0.0,1.8342959473020486,294.88671875,2247
+17432,chrome.exe,0.0,1.8287316578909645,293.9921875,2242
+17432,chrome.exe,0.0,1.8192067607331255,292.4609375,2198
+17432,chrome.exe,0.0,1.8225599133039974,293.0,2200
+17432,chrome.exe,0.0,1.8278083260236226,293.84375,2164
+17432,chrome.exe,0.0,1.8287073596839292,293.98828125,2164
+17432,chrome.exe,0.0,1.819255357147196,292.46875,2165
+17432,chrome.exe,0.0,1.8138368569783236,291.59765625,2161
+17432,chrome.exe,0.0,1.8337127903332011,294.79296875,2171
+17432,chrome.exe,0.0,1.8256943820115514,293.50390625,2173
+17432,chrome.exe,0.0,1.822608509718068,293.0078125,2169
+17432,chrome.exe,0.0,1.8156106260919007,291.8828125,2161
+17432,chrome.exe,0.0,1.8156106260919007,291.8828125,2161
+17432,chrome.exe,0.0,1.8155863278848654,291.87890625,2161
+17432,chrome.exe,0.0,1.8122088771069582,291.3359375,2160
+17432,chrome.exe,0.0,1.8122088771069582,291.3359375,2148
+17432,chrome.exe,0.0,1.8117472111732875,291.26171875,2149
+17432,chrome.exe,0.0,1.8319633194266594,294.51171875,2157
+17432,chrome.exe,0.0,1.8319633194266594,294.51171875,2157
+17432,chrome.exe,0.0,1.820300180049714,292.63671875,2147
+17432,chrome.exe,0.0,1.820300180049714,292.63671875,2147
+17432,chrome.exe,0.0,1.820300180049714,292.63671875,2147
+17432,chrome.exe,0.0,1.8202515836356434,292.62890625,2145
+17432,chrome.exe,0.0,1.8202515836356434,292.62890625,2145
+17432,chrome.exe,0.0,1.8202515836356434,292.62890625,2145
+17432,chrome.exe,0.0,1.8202515836356434,292.62890625,2145
+17432,chrome.exe,0.0,1.8202515836356434,292.62890625,2145
+17432,chrome.exe,0.0,1.8209805298467026,292.74609375,2145
+17432,chrome.exe,0.0,1.8209805298467026,292.74609375,2145
+17432,chrome.exe,0.0,1.8221954401984677,292.94140625,2159
+17432,chrome.exe,0.0,1.8199600051512201,292.58203125,2159
+17432,chrome.exe,0.0,1.8177002718969368,292.21875,2157
+17432,chrome.exe,0.0,1.8209076352255968,292.734375,2160
+17432,chrome.exe,0.0,1.817238605963266,292.14453125,2157
+17432,chrome.exe,0.0,1.811698614759217,291.25390625,2156
+17432,chrome.exe,0.0,1.8109939667551933,291.140625,2153
+17432,chrome.exe,0.0,1.8103622133722752,291.0390625,2153
+17432,chrome.exe,0.0,1.8301409538990117,294.21875,2160
+17432,chrome.exe,0.0,1.8340286670246602,294.84375,2213
+17432,chrome.exe,0.0,1.8224627204758561,292.984375,2206
+17432,chrome.exe,0.0,1.8211263190889144,292.76953125,2204
+17432,chrome.exe,0.0,1.8278083260236226,293.84375,2195
+17432,chrome.exe,0.0,1.835365068411602,295.05859375,2201
+17432,chrome.exe,0.0,1.8299222700356939,294.18359375,2196
+17432,chrome.exe,0.0,1.829047534582423,294.04296875,2194
+17432,chrome.exe,0.0,1.831428758871883,294.42578125,2194
+17432,chrome.exe,0.0,1.8311371803874592,294.37890625,2192
+17432,chrome.exe,0.0,1.8311371803874592,294.37890625,2192
+17432,chrome.exe,0.0,1.832740862051789,294.63671875,2198
+17432,chrome.exe,0.0,1.834733315028684,294.95703125,2198
+17432,chrome.exe,0.0,1.8472711898589005,296.97265625,2198
+17432,chrome.exe,0.0,1.8501383782890661,297.43359375,2195
+17432,chrome.exe,0.0,1.840103218783486,295.8203125,2187
+17432,chrome.exe,0.0,1.840103218783486,295.8203125,2187
+17432,chrome.exe,0.0,1.8415125147915334,296.046875,2187
+17432,chrome.exe,0.0,1.8414396201704277,296.03515625,2185
+17432,chrome.exe,0.0,1.8396658510568504,295.75,2185
+17432,chrome.exe,0.0,1.8394957636076035,295.72265625,2179
+17432,chrome.exe,0.0,1.8394957636076035,295.72265625,2179
+17432,chrome.exe,0.0,1.8393985707794622,295.70703125,2179
+17432,chrome.exe,0.0,1.8359968217945197,295.16015625,2179
+17432,chrome.exe,0.0,1.8359968217945197,295.16015625,2179
+17432,chrome.exe,0.0,1.8325950728095775,294.61328125,2179
+17432,chrome.exe,0.0,1.8325950728095775,294.61328125,2179
+17432,chrome.exe,0.0,1.8325464763955068,294.60546875,2179
+17432,chrome.exe,0.0,1.8325464763955068,294.60546875,2179
+The average memory % usage of the process name chrome.exe is 1.83 % | Average Memory Used : 294.64828125 MB | Average CPU Usage : 0.0% | Start Time :Sun Jul 23 12:17:23 2023 | End Time: Sun Jul 23 12:18:33 2023
+"
+Parameterized Memory Leak Check in Percentage",10,| Memory Threshold Should Not Exceed :,298.03999999999996,Theshold Increase Value,3.3938571186153066
+WARNING !! POSSIBLE MEMORY LEAK !!,"
+Application Leaks at Point Time: Sun Jul 23 12:17:39 2023 | Actual Memory Usage: 300.45 | Average Memory of Execution is : 294.65","
+WARNING !! POSSIBLE MEMORY LEAK !!"
+"
+Parameterized Memory Leak Check in Percentage",10,| Memory Threshold Should Not Exceed :,298.03999999999996,Theshold Increase Value,3.3938571186153066
+WARNING !! POSSIBLE MEMORY LEAK !!,"
+Application Leaks at Point Time: Sun Jul 23 12:17:40 2023 | Actual Memory Usage: 298.08 | Average Memory of Execution is : 294.65","
+WARNING !! POSSIBLE MEMORY LEAK !!"
+"
+Parameterized Memory Leak Check in Percentage",10,| Memory Threshold Should Not Exceed :,298.03999999999996,Theshold Increase Value,3.3938571186153066
+WARNING !! POSSIBLE MEMORY LEAK !!,"
+Application Leaks at Point Time: Sun Jul 23 12:17:41 2023 | Actual Memory Usage: 298.49 | Average Memory of Execution is : 294.65","
+WARNING !! POSSIBLE MEMORY LEAK !!"
+"
+Parameterized Memory Leak Check in Percentage",10,| Memory Threshold Should Not Exceed :,298.03999999999996,Theshold Increase Value,3.3938571186153066
+WARNING !! POSSIBLE MEMORY LEAK !!,"
+Application Leaks at Point Time: Sun Jul 23 12:17:41 2023 | Actual Memory Usage: 300.56 | Average Memory of Execution is : 294.65","
+WARNING !! POSSIBLE MEMORY LEAK !!"
+"
+Parameterized Memory Leak Check in Percentage",10,| Memory Threshold Should Not Exceed :,298.03999999999996,Theshold Increase Value,3.3938571186153066
+WARNING !! POSSIBLE MEMORY LEAK !!,"
+Application Leaks at Point Time: Sun Jul 23 12:17:42 2023 | Actual Memory Usage: 300.95 | Average Memory of Execution is : 294.65","
+WARNING !! POSSIBLE MEMORY LEAK !!"
+"
+Parameterized Memory Leak Check in Percentage",10,| Memory Threshold Should Not Exceed :,298.03999999999996,Theshold Increase Value,3.3938571186153066
+WARNING !! POSSIBLE MEMORY LEAK !!,"
+Application Leaks at Point Time: Sun Jul 23 12:17:42 2023 | Actual Memory Usage: 298.35 | Average Memory of Execution is : 294.65","
+WARNING !! POSSIBLE MEMORY LEAK !!"
+"
+Parameterized Memory Leak Check in Percentage",10,| Memory Threshold Should Not Exceed :,298.03999999999996,Theshold Increase Value,3.3938571186153066
+WARNING !! POSSIBLE MEMORY LEAK !!,"
+Application Leaks at Point Time: Sun Jul 23 12:17:43 2023 | Actual Memory Usage: 302.61 | Average Memory of Execution is : 294.65","
+WARNING !! POSSIBLE MEMORY LEAK !!"
+"
+Parameterized Memory Leak Check in Percentage",10,| Memory Threshold Should Not Exceed :,298.03999999999996,Theshold Increase Value,3.3938571186153066
+WARNING !! POSSIBLE MEMORY LEAK !!,"
+Application Leaks at Point Time: Sun Jul 23 12:17:44 2023 | Actual Memory Usage: 302.98 | Average Memory of Execution is : 294.65","
+WARNING !! POSSIBLE MEMORY LEAK !!"
+"
+Parameterized Memory Leak Check in Percentage",10,| Memory Threshold Should Not Exceed :,298.03999999999996,Theshold Increase Value,3.3938571186153066
+WARNING !! POSSIBLE MEMORY LEAK !!,"
+Application Leaks at Point Time: Sun Jul 23 12:17:44 2023 | Actual Memory Usage: 302.32 | Average Memory of Execution is : 294.65","
+WARNING !! POSSIBLE MEMORY LEAK !!"
+"
+Parameterized Memory Leak Check in Percentage",10,| Memory Threshold Should Not Exceed :,298.03999999999996,Theshold Increase Value,3.3938571186153066
+WARNING !! POSSIBLE MEMORY LEAK !!,"
+Application Leaks at Point Time: Sun Jul 23 12:17:45 2023 | Actual Memory Usage: 299.93 | Average Memory of Execution is : 294.65","
+WARNING !! POSSIBLE MEMORY LEAK !!"
+"
+Parameterized Memory Leak Check in Percentage",10,| Memory Threshold Should Not Exceed :,298.03999999999996,Theshold Increase Value,3.3938571186153066
+WARNING !! POSSIBLE MEMORY LEAK !!,"
+Application Leaks at Point Time: Sun Jul 23 12:17:45 2023 | Actual Memory Usage: 298.53 | Average Memory of Execution is : 294.65","
+WARNING !! POSSIBLE MEMORY LEAK !!"
+"
+Parameterized Memory Leak Check in Percentage",10,| Memory Threshold Should Not Exceed :,298.03999999999996,Theshold Increase Value,3.3938571186153066
+WARNING !! POSSIBLE MEMORY LEAK !!,"
+Application Leaks at Point Time: Sun Jul 23 12:17:46 2023 | Actual Memory Usage: 299.38 | Average Memory of Execution is : 294.65","
+WARNING !! POSSIBLE MEMORY LEAK !!"
+"
+Parameterized Memory Leak Check in Percentage",10,| Memory Threshold Should Not Exceed :,298.03999999999996,Theshold Increase Value,3.3938571186153066
+WARNING !! POSSIBLE MEMORY LEAK !!,"
+Application Leaks at Point Time: Sun Jul 23 12:17:47 2023 | Actual Memory Usage: 298.7 | Average Memory of Execution is : 294.65","
+WARNING !! POSSIBLE MEMORY LEAK !!"
+"
+Parameterized Memory Leak Check in Percentage",10,| Memory Threshold Should Not Exceed :,298.03999999999996,Theshold Increase Value,3.3938571186153066
+WARNING !! POSSIBLE MEMORY LEAK !!,"
+Application Leaks at Point Time: Sun Jul 23 12:17:47 2023 | Actual Memory Usage: 299.02 | Average Memory of Execution is : 294.65","
+WARNING !! POSSIBLE MEMORY LEAK !!"
 "
 *** Python Script Self Execution Memory Profiling ****
 *** top 5 stats grouped by filename *** 
 C:\Users\91620\AppData\Roaming\Python\Python311\site-packages\win32com\client\dynamic.py:0: size=199 KiB, count=1291, average=158 B
+C:\Program Files\Python311\Lib\linecache.py:0: size=20.0 KiB, count=189, average=108 B
+C:\Git\nexthink\nexthink.py:0: size=10.7 KiB, count=134, average=82 B
 C:\Users\91620\AppData\Roaming\Python\Python311\site-packages\win32com\client\util.py:0: size=10180 B, count=46, average=221 B
 <frozen importlib._bootstrap_external>:0: size=10022 B, count=96, average=104 B
-C:\Git\nexthink\nexthink.py:0: size=583 B, count=7, average=83 B
 <frozen importlib._bootstrap>:0: size=429 B, count=6, average=72 B
 C:\Users\91620\AppData\Roaming\Python\Python311\site-packages\win32com\client\build.py:0: size=120 B, count=2, average=60 B
 <string>:0: size=120 B, count=1, average=120 B
+C:\Program Files\Python311\Lib\tokenize.py:0: size=67 B, count=1, average=67 B
 C:\Program Files\Python311\Lib\tracemalloc.py:0: size=56 B, count=1, average=56 B
 
 *** top 10 stats ***

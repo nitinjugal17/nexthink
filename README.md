@@ -298,6 +298,19 @@ Default [-mt] is *10%*
 
 Default [-ct] is *5%*
 
+#### 3. How to Check Memory Leaks From Logs:
+
+Answer: In Parent Directory [./process_data.csv] will contains information eg. :
+
+    The average memory % usage of the process name chrome.exe is 1.83 % | Average Memory Used : 294.64828125 MB | Average CPU Usage : 0.0% | Start Time :Sun Jul 23 12:17:23 2023 | End Time: Sun Jul 23 12:18:33 2023
+
+    Parameterized Memory Leak Check in Percentage",10,| Memory Threshold Should Not Exceed :,298.03999999999996,Theshold Increase Value,3.3938571186153066
+
+    WARNING !! POSSIBLE MEMORY LEAK !!,"
+    Application Leaks at Point Time: Sun Jul 23 12:17:39 2023 | Actual Memory Usage: 300.45 | Average Memory of Execution is : 294.65","
+    WARNING !! POSSIBLE MEMORY LEAK !!"
+    Application Leaks at Point Time: Sun Jul 23 08:50:43 2023 | Actual Memory Usage: 302.56 | Average Memory of Execution is : 295.54
+
 
 ## License
 
