@@ -20,7 +20,23 @@ A console application using Python for Memory Profiling given Process Name and T
 • Outputs the average for each process metric.
 
 • Detects possible memory leaks and raises a warning 
- 
+
+#### More specifically, the app takes as input:
+
+• the process name (mandatory)
+
+• the overall duration of the monitoring in seconds (mandatory)
+
+• the sampling interval in seconds (optional, by default 5 sec if not specified)
+
+#### The metrics that should be gathered for the process are:
+
+• % of CPU used
+
+• private memory used
+
+• number of open handles / file descriptors
+
 
 
 ## Installation & Requirements
