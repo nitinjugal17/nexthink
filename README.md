@@ -280,7 +280,13 @@ Memory Sampling for Process id : 0 : chrome
 Please Enter Correct Process Name or Check Permission of Script Unable to find Process: chrome , PID : 0 | PLEASE RETRY WITH CORRECT PROCESS NAME
 ```
 
+#### How to Identify Memory Leak with Configuring Thresholds?
 
+Answer: Possible Way to Identify Memory Leaks -
+        1. Identify Random Raise in Private Memory Usage - using [-mt] suggests adding avg_mem_usage + ([-mt]/avg_mem_usage) * 100
+          Default [-mt] is *10%*
+        2. Identify Random Raise in CPU Usage - using [-ct] suggests adding avg_cpu_usage + [-ct]
+          Default [-ct] is *5%*
 
 
 ## Feedback
