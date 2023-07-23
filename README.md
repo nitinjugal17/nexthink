@@ -26,9 +26,6 @@ A console application in Python that, for a given Process Name.
  
 
 
-
-
-
 ## Installation & Requirements
 
 •Install Python 3.11.3 or Higher
@@ -170,16 +167,6 @@ Start Memory Profiling with Process name using:
 4. **-mt** Helps to decide Memory-Leak check due to Private Memory Usage % by Using *User Input*.
 
 
-## License
-
-[Pywin32](https://github.com/mhammond/pywin32/blob/main/Pythonwin/License.txt) - Lic. [PSF 2.0](https://spdx.org/licenses/PSF-2.0.html)
-
-[WMI](https://github.com/tjguk/wmi) - Lic. [MIT](http://www.opensource.org/licenses/mit-license.php)
-
-[Psutil](https://github.com/giampaolo/psutil/blob/master/LICENSE) - Lic. [BSD3](https://docs.eggplantsoftware.com/performance/license-psutil-bsd/)
-
-
-
 ## Screenshots & Output
 
 ![App Screenshot](https://github.com/nitinjugal17/nexthink/blob/main/screenshots/Screenshot_without_param.png)
@@ -297,3 +284,13 @@ Default [-ct] is *5%*
 ## Feedback
 
 If you have any feedback, please reach out to us at www.jugal.com@gmail.com
+
+
+## License
+
+[Pywin32](https://github.com/mhammond/pywin32/blob/main/Pythonwin/License.txt) - Lic. [PSF 2.0](https://spdx.org/licenses/PSF-2.0.html)
+
+[WMI](https://github.com/tjguk/wmi) - Lic. [MIT](http://www.opensource.org/licenses/mit-license.php)
+
+[Psutil](https://github.com/giampaolo/psutil/blob/master/LICENSE) - Lic. [BSD3](https://docs.eggplantsoftware.com/performance/license-psutil-bsd/)
+
