@@ -1,4 +1,14 @@
 
+## 🚀 About Me
+An Automation Engineer [SDET] , Providing Test Solutions Since 2014...
+
+- [Jugal Kishore](https://nitinjugal17.github.io/)
+## Author Details
+
+- [@nitinjugal17](https://www.github.com/nitinjugal17)
+
+- [@jugalk](https://www.linkedin.com/in/jugalk/)
+
 # Process resources monitoring app
 
 A console application in Python that, for a given Process Name.
@@ -156,8 +166,8 @@ Start Memory Profiling with Process name using:
 
 1. **Checks for Chrome.exe Process** in executed environment.
 2. Dumping of **PID,Name,CPU Usage %, Total Mem Usage %,Priv Mem Usage in Mb, File Handles Count** to **process.data.csv** within same execution directory.
-3. **-ct** Helps to decide Memory-Leak check due to Cpu Increase in % by Using Input.
-4. **-mt** Helps to decide Memory-Leak check due to Private Memory Usage Average Increase in % by Using *User Input*.
+3. **-ct** Helps to decide Memory-Leak check due to Cpu Increase % by Using Input.
+4. **-mt** Helps to decide Memory-Leak check due to Private Memory Usage % by Using *User Input*.
 
 
 ## License
