@@ -257,3 +257,31 @@ Application Leaks at Point Time: Sun Jul 23 08:51:29 2023 | Actual Memory Usage:
 ******Parameterized Cpu Leak Check in Percentage 5 | CPU Usage Threshold Should Not Exceed :5.0%, CPU Spike Indicator Value Increasing Param :5.0%, Avg Cpu Usage:0.0******
 PS C:\Git\nexthink>
 ```
+
+## FAQ
+
+#### Can we just pass process_name and get a default memory profiling?
+
+Answer : Yes, You can.
+        python nexthink.py chrome.exe
+
+#### What if i enter a wrong Process Name?
+
+Answer: You will be suggested without nearest possible running process value, to re-try.
+        
+        ``` Example
+        python .\nexthink.py -p chrome -d 100    
+********Using Params Duration in sec: 100 | Process Name: chrome | WITH Leak Memory Threshold : 10% | WITH CPU Threshold : 5%*******
+
+## YOU HAVE ENTERED A WRONG PROCESS NAME : chrome  WAS NOT FOUND , ARE YOU TRYING TO FIND : chrome.exe
+            ********#############  PLEASE RETRY WITH CORRECT PARAMETERS | Ex. | python nexthink.py -d 10 -n chrome ###########***********
+Memory Sampling for Process id : 0 : chrome
+Please Enter Correct Process Name or Check Permission of Script Unable to find Process: chrome , PID : 0 | PLEASE RETRY WITH CORRECT PROCESS NAME
+        ```
+
+
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at www.jugal.com@gmail.com
