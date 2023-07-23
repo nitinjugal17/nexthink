@@ -3,9 +3,6 @@
 An Automation Engineer [SDET] , Providing Test Solutions Since 2014...
 
 - [Jugal Kishore](https://nitinjugal17.github.io/)
-## Author Details
-
-- [@nitinjugal17](https://www.github.com/nitinjugal17)
 
 - [@jugalk](https://www.linkedin.com/in/jugalk/)
 
