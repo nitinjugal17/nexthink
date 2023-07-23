@@ -9,9 +9,9 @@ An Automation Engineer [SDET] , Providing Test Solutions Since 2014...
 
 - [@jugalk](https://www.linkedin.com/in/jugalk/)
 
-# Process resources monitoring app
+# Process Resources Monitoring App [PRM App]
 
-A console application in Python that, for a given Process Name.
+A console application using Python for Memory Profiling given Process Name and Threshold's.
 
 
 ## Features
@@ -62,19 +62,19 @@ Clone the project
 
 Go to the project directory
 
-```bash
+```cmd
   cd nexthink
 ```
 
 Install dependencies
 
-```bash
+```cmd
   pip install ./requirements.txt
 ```
 
 Start Memory Profiling with Process name
 
-```bash
+```cmd
   python nexthink.py chrome.exe
 ```
 Start Memory Profiling with Process name using :
@@ -86,9 +86,11 @@ Start Memory Profiling with Process name using :
 •Param (-ct[cpu threshold increase in %]) - Default Value : 5
 
 •Param (-mt[Priv Memory threshold increase in %]) -Default Value:10
-```bash
+
+```cmd
   python nexthink.py -n chrome.exe
 ```
+
 Start Memory Profiling with Process name using:
 
 •Param (-n[process_name])
@@ -98,9 +100,11 @@ Start Memory Profiling with Process name using:
 •Param (-ct[cpu threshold increase in %]) - Default Value : 5
 
 •Param (-mt[Priv Memory threshold increase in %]) -Default Value:10
-```bash
+
+```cmd
   python nexthink.py -n chrome.exe -d 100 
 ```
+
 Start Memory Profiling with Process name using:
 
 •Param (-n[process_name])
@@ -110,7 +114,8 @@ Start Memory Profiling with Process name using:
 •Param (-ct[cpu threshold increase])
 
 •Param (-mt[Priv Memory threshold increase in %]) -Default Value:10
-```bash
+
+```cmd
   python nexthink.py -n chrome.exe -d 100 -ct 5
 ```
 Start Memory Profiling with Process name using:
@@ -122,7 +127,8 @@ Start Memory Profiling with Process name using:
 •Param (-ct[cpu threshold increase in %])
 
 •Param (-mt[Priv Memory threshold increase in %])
-```bash
+
+```cmd
   python nexthink.py -n chrome.exe -d 100 -ct 5 -mt 10
 ```
 ## Parameter Reference
@@ -159,7 +165,7 @@ Start Memory Profiling with Process name using:
 | `-ct` | `Cpu Leak Indentifier in %` | **Not Required**. *5*|
 | `-mt` | `Priv Mem Leak Indentifier in %` | **Not Required**. *10* |
 
-#### python nexthink.py chrome.exe
+## python nexthink.py chrome.exe
 
 1. **Checks for Chrome.exe Process** in executed environment.
 2. Dumping of **PID,Name,CPU Usage %, Total Mem Usage %,Priv Mem Usage in Mb, File Handles Count** to **process.data.csv** within same execution directory.
@@ -171,7 +177,7 @@ Start Memory Profiling with Process name using:
 
 ![App Screenshot](https://github.com/nitinjugal17/nexthink/blob/main/screenshots/Screenshot_without_param.png)
 
-```http
+```cmd
  PS C:\Git\nexthink> python .\nexthink.py -p chrome.exe -d 100 
 ********Using Params Duration in sec: 100 | Process Name: chrome.exe | WITH Leak Memory Threshold : 10% | WITH CPU Threshold : 5%*******
 Memory Sampling for Process id : 17432 : chrome.exe
@@ -256,7 +262,7 @@ Answer : Yes, You can.
 
 Answer: You will be suggested without nearest possible running process value, to re-try.
 
-```http
+```cmd
 Example
         python .\nexthink.py -p chrome -d 100    
 ********Using Params Duration in sec: 100 | Process Name: chrome | WITH Leak Memory Threshold : 10% | WITH CPU Threshold : 5%*******
@@ -280,12 +286,6 @@ Default [-mt] is *10%*
 Default [-ct] is *5%*
 
 
-
-## Feedback
-
-If you have any feedback, please reach out to us at www.jugal.com@gmail.com
-
-
 ## License
 
 [Pywin32](https://github.com/mhammond/pywin32/blob/main/Pythonwin/License.txt) - Lic. [PSF 2.0](https://spdx.org/licenses/PSF-2.0.html)
@@ -293,4 +293,10 @@ If you have any feedback, please reach out to us at www.jugal.com@gmail.com
 [WMI](https://github.com/tjguk/wmi) - Lic. [MIT](http://www.opensource.org/licenses/mit-license.php)
 
 [Psutil](https://github.com/giampaolo/psutil/blob/master/LICENSE) - Lic. [BSD3](https://docs.eggplantsoftware.com/performance/license-psutil-bsd/)
+
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at www.jugal.com@gmail.com
 
