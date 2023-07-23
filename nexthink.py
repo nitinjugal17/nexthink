@@ -26,7 +26,7 @@
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 # Purpose : This script aims to gather all memory profiling for a windows process and log them in a csv file within execution directory, with appropriate memory leak indicators
-# Usage : nexthink.py -p chrome.exe
+# Usage : nexthink.py -p chrome.exe -d 100 -ct 5 -mt 10
 
 import sys , csv, getopt, time
 import wmi
@@ -69,18 +69,20 @@ def __get_pid_by_name_windows(process_name, filename):
   finally:
     pass
 
-def __detect_leak(filename, mem_dict, cpu_dict, memaverage, cpuavg, leakpercent: int, leakpercent2: int ):
-  val_increase = round(leakpercent/round(memaverage,3) * 100,3)
-  leakmem_indi = round(memaverage + val_increase, 3)
+def __detect_leak(filename, mem_dict, cpu_dict, memaverage, cpuavg, cpupercent: int, mempercent: int ):
+  val_increase = (mempercent/round(memaverage,2)) * 100
+  leakmem_indi = round(memaverage , 2) + round(val_increase, 2)
   # print(val_increase, leakmem_indi)
+  print(f'\nParameterized Memory Leak Check in Percentage {mempercent} | Memory Threshold Should Not Exceed :{leakmem_indi}Mb, Increase By: {round(val_increase, 2)}Mb')
   for t, mem in mem_dict.items():
     # print(t,mem)
-    if leakmem_indi < round(mem, 3):
-      outxt = '\nApplication Leaks at Point Time: {} | Actual Memory Usage: {} | Average Memory of Execution is : {}'.format(time.ctime(t), round(mem, 3), round(memaverage, 3))
+    if leakmem_indi < round(mem, 2):
+      outxt = '\nApplication Leaks at Point Time: {} | Actual Memory Usage: {} | Average Memory of Execution is : {}'.format(time.ctime(t), round(mem, 2), round(memaverage, 2))
       # print(outxt)
       warnings.warn(outxt)
       fileclear = open(filename, "a")
       writer = csv.writer(fileclear, delimiter=",")
+      writer.writerow(['\nParameterized Memory Leak Check in Percentage', mempercent, '| Memory Threshold Should Not Exceed :', leakmem_indi, 'Theshold Increase Value', val_increase])
       writer.writerow(['WARNING !! POSSIBLE MEMORY LEAK !!', outxt, '\nWARNING !! POSSIBLE MEMORY LEAK !!'])
     else:
       pass
@@ -89,17 +91,19 @@ def __detect_leak(filename, mem_dict, cpu_dict, memaverage, cpuavg, leakpercent:
   # cpu_val = round(leakpercent2/round(cpuavg,4) * 100, 3)
   # leakcpu_indi = round(cpuavg + cpu_val, 3)
 
-  cpu_val = round(cpuavg, 3) + leakpercent2
-  leakcpu_indi = round(cpuavg + cpu_val, 3)
+  cpu_val = round(cpuavg, 2 ) + cpupercent
+  leakcpu_indi = round(cpuavg + cpu_val, 2)
   # print(cpu_val, leakcpu_indi)
+  print(f'\nParameterized Cpu Leak Check in Percentage {cpupercent} | CPU Usage Threshold Should Not Exceed :{leakcpu_indi}%, Increased By :{cpu_val}%')
   for ti, per in cpu_dict.items():
     # print(ti,per)
     if leakcpu_indi < round(per, 3):
-      otxt = '\nApplication Leaks at Point Time: {} | Actual CPU Usage: {} | Average CPU Usage of Execution is : {}'.format(time.ctime(ti), round(per, 3), round(cpuavg, 3))
+      otxt = '\nApplication Leaks at Point Time: {} | Actual CPU Usage: {} | Average CPU Usage of Execution is : {}'.format(time.ctime(ti), round(per, 2), round(cpuavg, 2))
       # print(otxt)
       warnings.warn(otxt)
       fileclear = open(filename, "a")
       writer = csv.writer(fileclear, delimiter=",")
+      writer.writerow(['\nParameterized Cpu Leak Check in Percentage', cpupercent, '| Cpu Threshold Should Not Exceed :', leakcpu_indi, 'Theshold Increase Value',cpu_val])
       writer.writerow(['WARNING !! POSSIBLE CPU LEAK DUE TO MEMORY MISMAGEMENT !!', otxt, '\nWARNING !! POSSIBLE MEMORY LEAK !!'])
     else:
       pass
