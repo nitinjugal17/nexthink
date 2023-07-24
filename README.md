@@ -190,6 +190,10 @@ Start Memory Profiling with Process name using:
 
 ![App Screenshot](https://github.com/nitinjugal17/nexthink/blob/main/screenshots/Screenshot_without_param.png)
 
+![App Screenshot](https://github.com/nitinjugal17/nexthink/blob/main/screenshots/Screenshot_without_param_2.png)
+
+![App Screenshot](https://github.com/nitinjugal17/nexthink/blob/main/screenshots/Screenshot_without_param_3.png)
+
 ```cmd
  PS C:\Git\nexthink> python .\nexthink.py -p chrome.exe -d 100 
 ********Using Params Duration in sec: 100 | Process Name: chrome.exe | WITH Leak Memory Threshold : 10% | WITH CPU Threshold : 5%*******
@@ -327,7 +331,11 @@ Answer: In Parent Directory [./process_data.csv] will contains information eg. :
 
 - Add integrations for Profiling with Tracemalloc
 
-- Convert to classmethods
+- Add integrations for Profiling with Tracemalloc.
+
+- Convert to classmethods.
+  
+- Using Patterns to minimize code and make it inhertiable, secure.
 
 
 ## Feedback
